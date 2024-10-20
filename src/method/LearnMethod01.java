@@ -12,6 +12,9 @@ public class LearnMethod01 {
         int sum = add(1,2);
         System.out.println(sum);
         star();
+        int a = 12;
+        int b = 23;
+        System.out.println(max(a,b));
     }
 
     public static int add(int a, int b){
@@ -31,6 +34,18 @@ public class LearnMethod01 {
             }
             System.out.println();
 
+        }
+
+    }
+    //两个数取大数的方法。
+    public static int max(int a, int b){
+        if(a==b){
+            return 0;//如果a等于b,那么返回0，return除了可以返回参数外，还可以中止方法。
+        }
+        if (a>b){
+            return a;
+        }else{
+            return b;
         }
     }
 }
